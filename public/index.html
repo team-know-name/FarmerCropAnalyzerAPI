@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>File Upload</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+  <script src="jquery.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+    <center>
+        <form action="fileupload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="filetoupload" onchange="readURL(this)"/>
+        <br/>
+        <input type="submit" value="Submit for Crop Diagnosis">
+        </form>
+        <br>
+        <img id="preview" src="#" alt="Crop Preview"/>
+    </center>
+</body>
+</html>
