@@ -97,7 +97,7 @@ app.post('/fileupload',(req,res)=>{
             }
                         }
           console.log(op);
-          res.send(op);
+          res.send(category[2]);
         })
       })
     })
